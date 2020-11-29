@@ -1,4 +1,4 @@
-#FlaskInDocker
+FlaskInDocker
 
 Simple flask application inside of a docker container. Docker not needed as script automatically installs it.
 
