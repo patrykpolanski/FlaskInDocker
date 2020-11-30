@@ -1,6 +1,10 @@
 FlaskInDocker
 
-Simple flask application inside of a docker container. Docker not needed as script automatically installs it.
+Simple flask application inside of a docker container.
+You can either install it using MakeContainer or DownloadFromDockerHub
+
+MakeContainer creates a docker container from files inside repo
+DownloadFromDockerHub automatically downloads this image from docker hub and mounts it.
 
 Originaly compilled and tested on Ubuntu 20.04
 
@@ -8,8 +12,8 @@ In order to make it work:
 
     Clone repo
     cd inside cloned repo
-    chmod 777 ./script
-    ./script
+    chmod +x ./DownloadFromDockerHub <or> chmod +x ./MakeContainer
+    ./DownloadFromDockerHub <or> ./MakeContainer
 
 This file is a simple bash script which:
 
