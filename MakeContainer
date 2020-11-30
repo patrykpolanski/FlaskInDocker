@@ -1,0 +1,13 @@
+echo "----------UPDATING-------------"
+sudo apt-get update
+echo "-------------------------------"
+echo "--INSTALLING DOCKER------------"
+sudo apt install docker.io
+echo "-------------------------------"
+echo "-----BUILDING...---------------"
+sudo docker build -t flask:latest .
+sudo docker run -d -p 5000:5000 flask:latest
+echo ""
+curl localhost:5000
+echo ""
+echo "done!"
