@@ -7,8 +7,9 @@ echo "----------INSTALLING CURL------"
 sudo apt install curl
 echo "----------BUILDING...----------"
 sudo docker pull ppolanski27/flask:latest .
-sudo docker run -d -p 5000:5000 ppolanski/flask:latest
-echo ""
+sudo docker run -d -p 5000:5000 ppolanski27/flask:latest
+echo "wait..."
+sleep 5
 curl localhost:5000
 echo ""
 echo "done!"
